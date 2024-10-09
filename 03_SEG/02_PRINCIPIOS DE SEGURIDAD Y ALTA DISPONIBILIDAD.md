@@ -29,5 +29,5 @@
 ### 02.1.3 Otros terminos
 * **Batbelt**: *"Batbelt"* o *"Baticinturon"* se refiere al conjunto de herramientas fisicas que un hacker puede o no tener a su disposición, llevar varias al mismo tiempo da una imagen similar al cinturón de herramientas que usa Batman, de ahi el nombre.
 * **Bathtub curve**: La curva probabilidad de fallo que tiene un dispositivo a lo largo de su vida util. Al principio de su uso la probabilidad de fallo es alta debido a la inexperiencia del usuario, despues esta baja segun el usuario gana experiencia hasta que llega casi a 0 y por ultimo esta sube segun alcanza el final de su vida util. Esto deja a la grafica con la forma de una bañera de ahi el termino.
-* ****:
-* ****:
+* **Black magic**: Consiste en una tecnica informatica que funciona sin que ninguno de los tecnicos a cargo sepa como.
+* **Contrato rosa**: Un ***contrato rosa*** es un acuerdo especial entre un proveedor de Internet (ISP) y una persona que envía correos no deseados (spam). Este tipo de contrato permite al remitente de spam no seguir las reglas normales que prohíben el envío de spam, porque el ISP le cobra mucho más dinero que a un cliente normal. 
