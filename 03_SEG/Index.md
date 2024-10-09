@@ -1,5 +1,5 @@
-# 02_Principios de la Seguridad
+# 03_Seguridad
 
 ## Indice
 
-1.  [**Jerga Hacker**](./01_Jerga-Hacker.md)
+1.  [**02_Principios de Seguridad**](02_Principios-de-Seguridad/Index.md)
