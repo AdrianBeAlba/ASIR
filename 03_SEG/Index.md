@@ -2,4 +2,4 @@
 
 ## Indice
 
-1.  [**02_Principios de Seguridad**](02_PRINCIPIOS-DE-SEGURIDAD-Y-ALTA-DISPONIBILIDAD/Index.md)
+1.  [**Principios de Seguridad**](02_PRINCIPIOS-DE-SEGURIDAD-Y-ALTA-DISPONIBILIDAD/Index.md)
