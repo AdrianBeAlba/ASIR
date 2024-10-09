@@ -1,2 +1,2 @@
 # Indice
-1. [**Inroduccion a las dns**](Introduccion-a-las-DNS.md)
+1. [**Inroducción a las dns**](Introduccion-a-las-DNS.md)
