@@ -79,10 +79,10 @@ $TTL    604800
 ;
 #Aqui añadimos los registros
 @       IN      NS      adrianbeja.local.
-202     IN      PTR     adrianbeja.local.
-203     IN      PTR     ftp.adrianbeja.local.
-204     IN      PTR     www.adrianbeja.local.
-205     IN      PTR     ns.adrianbeja.local.
+202.2   IN      PTR     adrianbeja.local.
+203.2   IN      PTR     ftp.adrianbeja.local.
+204.2   IN      PTR     www.adrianbeja.local.
+205.2   IN      PTR     ns.adrianbeja.local.
 
 ~~~
 
