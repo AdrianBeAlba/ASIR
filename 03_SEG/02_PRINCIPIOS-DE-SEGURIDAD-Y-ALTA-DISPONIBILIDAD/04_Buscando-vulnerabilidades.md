@@ -1,6 +1,6 @@
 # Buscando vulnerabilidades (MBSA 2.3 y NMAP)
 
-# 01.- Microssoft Baseline Security Analizer
+# 01.- Microsoft Baseline Security Analizer
 ## Requerimientos
 
 * **Windows de 7 a 10**
