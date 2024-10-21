@@ -9,7 +9,7 @@ Hay dos tipos de **Pool**:
 Obtener los volúmenes de un determinado pool (por ejemplo el pool ***default***): 
 
 ~~~bash
-##La opcion "--details" da mas detalles
+## La opcion "--details" da mas detalles
 virsh -c qemu:///system vol-list default --details
 
 ~~~
