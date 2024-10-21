@@ -13,12 +13,15 @@
 ![abir](IMG/01.png)
 
 **2. Selecciona La opcion de escanear varios ordenadores.**
+
 ![abir](IMG/02.png)
 
 **3. No selecciones un dominio y determina el rango de IP en las que analizar vulnerabilidades**
+
 ![abir](IMG/03.png)
 
 ## Resultados
+
 ![abir](IMG/04.png)
 
 No se consiguieron encontrar dispositivos windows en ese rango de IPS
