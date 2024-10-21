@@ -22,8 +22,8 @@ git help [comando] # Ayuda y ayuda de [comando]
 
 cd /home/tu_usuario
 
-git config --global user.name "Adrian Bejarano" #Nombre
-git config --global user.email "adrian.be.alba@gmail.com" #Correo
+git config --global user.name "John Doe" #Nombre
+git config --global user.email "john.doe@gmail.com" #Correo
 
 
 ## Inciar proyecto en carpeta actual
