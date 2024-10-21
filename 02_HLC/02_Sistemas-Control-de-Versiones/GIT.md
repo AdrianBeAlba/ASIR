@@ -40,7 +40,7 @@ git add <archivo> # Lo mete en el stager.
 
 git commit -m <Comentario> # Mete todo del stager en el repositorio local.
 
-git log [--onefile] # Muestra el historial de commits, --onefile lo simplifica.
+git log [--oneline] [--graph] [--all] # Muestra el historial de commits, --oneline lo simplifica.
 
 
 ~~~
