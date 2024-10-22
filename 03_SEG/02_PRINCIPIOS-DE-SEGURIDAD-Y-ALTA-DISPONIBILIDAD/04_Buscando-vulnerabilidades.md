@@ -38,12 +38,16 @@ No se consiguieron encontrar dispositivos windows en ese rango de IPS
 2. Ejecuta el siguiente comando
     ~~~bash
         nmap -sS -vvvv -Pn -T4 -p- --open <tu_ip>
+        # o
+        sudo nmap -sV --script vuln <tu_ip> ## Te dice posibles vulneravilidades
     ~~~
     * nmap: Es la herramienta que estás utilizando para realizar el escaneo. Nmap es una herramienta de escaneo de redes que permite descubrir hosts y servicios en una red.
 
     * -sS: Realiza un escaneo SYN o escaneo sigiloso. Este tipo de escaneo es menos detectable porque solo envía paquetes SYN (inicio de conexión TCP) y no completa el proceso de establecimiento de la conexión (TCP handshake).
 
     * -vvvv: Activa el modo de verbosidad con 4 "v", lo que significa que recibirás una salida muy detallada del escaneo.
+
+    * -sV: detecta servicios en puertos abiertos y sus versiones.
 
     * -Pn: Indica a Nmap que ignore el ping para verificar si el host está activo o no, y procede con el escaneo directamente, útil si el ping está bloqueado por firewall.
 
