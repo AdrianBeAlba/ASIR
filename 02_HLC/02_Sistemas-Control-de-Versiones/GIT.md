@@ -62,7 +62,7 @@ git log [--oneline] [--graph] [--all] # Muestra el historial de commits, --oneli
 
     git diff <rama> # Ves direrencias entre rama actual y <rama>.
 
-    git merge <nuevaRama> # Mergea rama actual con <nuevaRama>
+    git merge [--no-ff] <nuevaRama> # Mergea rama actual con <nuevaRama> --no-ff obliga a preguntar.
 
     git branch -d <nuevaRama> # Elimina <nuevaRama>.
 ~~~

@@ -97,3 +97,7 @@ En el entorno gracico se pueden ver las siguients **configuraciones:**
 * **Ceph**: Almacenamiento distribuido
 * **Replicación**
 * **Historial de tareas**
+
+## Directorios importantes
+
+* **Directorrio de ISOS**: /var/lib/vz/template/iso

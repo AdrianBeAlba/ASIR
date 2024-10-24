@@ -28,7 +28,9 @@ Con el crecimiento de Internet, las transferencias AXFR se hicieron lentas y con
 
 El proceso IXFR, es prácticamente igual que el AXFR, en primer lugar, tras el tiempo de refresco, el servidor esclavo solicita al maestro el RR SOA, y si trae un número de serie superior, el esclavo solicita la transferencia del fichero de zona y además indica si es capaz de aceptar transferencias IXFR; si ambos, el maestro y el esclavo, pueden trabajar con estas transferencias, se produce una transferencia IXFR del fichero de zona, en otro caso, se la transferencia será AXFR.
 
-## 02.4
+## 02.4 Comandos
+
+rndc
 ----
 ## Referencias
 * [www.fpgenred.com](https://www.fpgenred.es/DNS/)
