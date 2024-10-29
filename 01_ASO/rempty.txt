@@ -1,1 +1,3 @@
 .
+14 y dos nodos no entra
+7,8,9.2

@@ -90,3 +90,7 @@ rkhunter --check --report-warnings-only
 Existen otras herramientas de detección de rootkits. Por ejemplo GMER: http://www.gmer.net/. o https://es.malwarebytes.com/antirootkit/ Instálala y comprueba su funcionamiento.
 
 --------------
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

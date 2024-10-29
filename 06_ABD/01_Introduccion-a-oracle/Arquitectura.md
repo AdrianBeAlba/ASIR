@@ -9,13 +9,13 @@ clear screen;
 
 1. Levantarla con acceso restringido
 ~~~sql
-SQL> startup restrict pfile=c\app\oracle\admin\init.ora
+startup restrict pfile=c\app\oracle\admin\init.ora
 ~~~
 No te permite conectar como ningun usuario.
 
 **Si quiero volver en estado original**
 ~~~sql
-SQL> alter system disable restricted session;
+alter system disable restricted session;
 ~~~
 Te permitira conectarte como usuario.
 
@@ -28,15 +28,12 @@ El término quiesce en Oracle se refiere a poner la base de datos en un estado "
 En uno entras como sys e introduces:
 ~~~sql
 alter system quiesce restricted;
-~~~
 
-Voy al otro terminal:
-~~~sql
+--Voy al otro terminal:
 alter system uniquiesce;
-~~~
 
-### Suspender bd
-~~~sql
+--Suspender bd
+
 alter system suspend;
 
 --Ver estado de bd
@@ -66,10 +63,17 @@ Puedes cambiar los metodos de cambio en el propio comando en este caso spfile. H
 alter system set job_queue_processes=5 scope=spfile;
 ~~~
 
-Para tocar los staticos como processes, tienes que alterar el .ora que configura los paramatetros a la hora de lanzar la bd. Despues hay que apagarla y relanzarla. Al entrar tendra el parametro cambiado.
+Para tocar los staticos como processes, tienes que alterar el .ora que configura los paramatetros a la hora de lanzar la bd. 
+
+Despues hay que apagarla y relanzarla. Al entrar tendra el parametro cambiado.
 ~~~sql
 shutdown immediate;
 --Alteras el .ora
 startup pfile=c\app\oracle\admin\init.ora;
 show parameter processes;
+~~~
 
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

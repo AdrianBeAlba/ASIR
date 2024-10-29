@@ -1,5 +1,6 @@
-# Indice
+# Índice de 01_KVM
 
-* **[Discos, volumenes y clonaciones](./07_Discos-volumenes-colnaciones.md)**
+- [07_Discos-volumenes-colnaciones.md](07_Discos-volumenes-colnaciones.md)
 
-**[Atras](../Index.md)**
+- [⬅️ Volver al índice superior](../Index.md)
+- [⬆️ Volver al README](/README.md)

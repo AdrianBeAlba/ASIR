@@ -1,5 +1,6 @@
-# Indice
-1. **[KVM](01_KVM/Index.md)**
-2. **[Proxmox](02_Proxmox/Index.md)**
+# Índice de 01_ASO
 
-**[Atras](../README.md)**
+- [01_KVM](./01_KVM/Index.md)
+- [02_Proxmox](./02_Proxmox/Index.md)
+
+- [⬆️ Volver al README](/README.md)

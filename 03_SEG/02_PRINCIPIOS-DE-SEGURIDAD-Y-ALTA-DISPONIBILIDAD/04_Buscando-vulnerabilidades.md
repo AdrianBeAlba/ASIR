@@ -74,3 +74,8 @@ No se consiguieron encontrar dispositivos windows en ese rango de IPS
 - **Tiempo total del escaneo**: 0.44 segundos
 
 Este escaneo muestra que el host tiene abiertos los puertos 22 (SSH) y 53 (DNS), mientras que el resto de los puertos están cerrados.
+
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

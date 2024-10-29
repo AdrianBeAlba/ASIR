@@ -1,5 +1,5 @@
-# Indice
+# Índice de 06_ABD
 
-1. [**Introduccion al oracle**](01_Introduccion-a-oracle/Index.md)
+- [01_Introduccion-a-oracle](./01_Introduccion-a-oracle/Index.md)
 
-**[Atras](../README.md)**
+- [⬆️ Volver al README](/README.md)

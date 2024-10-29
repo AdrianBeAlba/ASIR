@@ -56,3 +56,7 @@ fi
 ![mazingerz](mazingerz.jpg)
 
 ![heidi](img/heidi.jpeg)
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

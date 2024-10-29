@@ -1,11 +1,5 @@
-# 03_Seguridad
+# Índice de 03_SEG
 
-## Indice
+- [02_PRINCIPIOS-DE-SEGURIDAD-Y-ALTA-DISPONIBILIDAD](./02_PRINCIPIOS-DE-SEGURIDAD-Y-ALTA-DISPONIBILIDAD/Index.md)
 
-1.  [**Principios de Seguridad**](02_PRINCIPIOS-DE-SEGURIDAD-Y-ALTA-DISPONIBILIDAD/Index.md)
-
-
-## Links impotantes
-* [**Virustotal**](https://www.virustotal.com/gui/home/upload)
-
-**[Atras](../README.md)**
+- [⬆️ Volver al README](/README.md)

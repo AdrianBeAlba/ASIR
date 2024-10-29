@@ -47,3 +47,8 @@ alter user USUARIO <PARAMETRO> <VALORES>;
 alter user usuario quota on users;
 
 ~~~
+
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

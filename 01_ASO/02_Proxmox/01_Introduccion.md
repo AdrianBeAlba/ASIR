@@ -101,3 +101,7 @@ En el entorno gracico se pueden ver las siguients **configuraciones:**
 ## Directorios importantes
 
 * **Directorrio de ISOS**: /var/lib/vz/template/iso
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

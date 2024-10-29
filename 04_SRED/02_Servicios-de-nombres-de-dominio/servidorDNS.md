@@ -100,3 +100,7 @@ dig @172.26.2.202 www.adrianbeja.local
 ~~~
 
 Si te devuelve la ip en la respuesta significa que funciona.
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

@@ -1,5 +1,5 @@
-# Indice
+# Índice de 02_HLC
 
-1. [**Sistemas de control de Versiones**](02_Sistemas-Control-de-Versiones/Index.md)
+- [02_Sistemas-Control-de-Versiones](./02_Sistemas-Control-de-Versiones/Index.md)
 
-**[Atras](../README.md)**
+- [⬆️ Volver al README](/README.md)

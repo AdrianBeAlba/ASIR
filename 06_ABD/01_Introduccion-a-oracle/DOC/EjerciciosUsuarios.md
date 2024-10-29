@@ -1469,3 +1469,8 @@ select _ from prueba01.codigos
 
 - ERROR at line 1:
   ORA-00942: table or view does not exist
+
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

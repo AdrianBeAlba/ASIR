@@ -96,3 +96,8 @@ virt-sysprep -d nom-maq-image --hostname nom-maq-image --root password
 virt-customize -d nom-maq --hostname nom-maq-01 --password nom-usuario:password:SecretPassword
 ~~~
 
+
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

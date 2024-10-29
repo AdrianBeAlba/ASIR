@@ -34,3 +34,8 @@ Los roles se almacenan en varias tablas:
 * **ROLE_ROLE_PRIVS**: Roles concedidos a otros roles.
 * **ROLE_SYS_PRIVS**: Privilegios de sistema concedidos a los roles.
 * **ROLE_TAB_PRIVS**: Privilegios sobre objetos concedidos a los roles.
+
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

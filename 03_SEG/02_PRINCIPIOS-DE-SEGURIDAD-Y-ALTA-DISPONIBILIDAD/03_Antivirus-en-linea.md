@@ -96,3 +96,7 @@ El proceso de analisis solo se realiza una vez, en vez de instalar un programa q
 
 ### 4.6.- Soluciones propuestas de desinfección.
 ---
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

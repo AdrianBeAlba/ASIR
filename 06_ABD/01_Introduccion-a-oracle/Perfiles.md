@@ -54,3 +54,7 @@ DROP PROFILE nombreperfil;
 Vistas del diccionario de datos:
 DBA_PROFILES: Muestra los perfiles existentes con sus límites.
 DBA_USERS: Muestra los perfiles de los usuarios
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

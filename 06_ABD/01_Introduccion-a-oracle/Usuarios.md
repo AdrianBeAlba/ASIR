@@ -72,3 +72,8 @@ Permiten realizar una determinada operación o ejecutar un comando concreto. Hay
 - **INSERT ANY TABLE**: Permite insertar datos en cualquier tabla en la base de datos.
 - **UPDATE ANY TABLE**: Permite actualizar datos en cualquier tabla en la base de datos.
 - **DELETE ANY TABLE**: Permite eliminar datos de cualquier tabla en la base de datos.
+
+
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
