@@ -30,7 +30,10 @@ El proceso IXFR, es prácticamente igual que el AXFR, en primer lugar, tras el t
 
 ## 02.4 Comandos
 
-rndc
+~~~bash
+sudo rndc retransfer adrianbeja.local
+sudo rndc retransfer 26.172.in-addr.arpa
+~~~
 ----
 ## Referencias
 * [www.fpgenred.com](https://www.fpgenred.es/DNS/)

@@ -1,3 +1,9 @@
+# Promp
+```sql
+set sqlprompt 'Prompt';
+clear screen;
+```
+
 # Usuarios
 ~~~sql 
     -- Crear usuario
