@@ -453,6 +453,8 @@ ALTER SYSTEM FLUSH SHARED POOL;
 ## Procesos de Oracle
 ### Procesos Usuario:
 * Se crea cuando un usuario se conecta a la BD.
-* Atiende 
+* Atiende a peticiones lanzadas por el Usuario.
+
+
 [⬅️ Volver al índice](./Index.md)
 [⬆️ Volver al README](/README.md)
