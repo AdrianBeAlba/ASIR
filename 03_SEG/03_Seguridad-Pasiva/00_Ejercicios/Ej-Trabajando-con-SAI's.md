@@ -47,3 +47,6 @@
     830.2×(100/70)​=1186
 
 ### Potencia mínima recomendada para el SAI = **1186 W**
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

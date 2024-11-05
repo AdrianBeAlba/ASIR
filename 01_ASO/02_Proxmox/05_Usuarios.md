@@ -155,3 +155,6 @@ Para crear roles personalizados en Proxmox, sigue estos pasos:
 
 5. **Probar el rol**:
    - Asegúrate de que el usuario al que asignaste el rol tenga los permisos deseados al probar sus acciones en la interfaz de Proxmox.
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

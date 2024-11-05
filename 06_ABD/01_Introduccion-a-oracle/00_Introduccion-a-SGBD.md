@@ -170,3 +170,6 @@ CREATE TABLESPACE MD_DATA DATAFILE 'mddata01.dbf' SIZE 1000M, 'mddata02.dbf' SIZ
     * **Apache cassandra**: Es la mas popular y potente. A parte de ser de codigo abierto.
     * **Azure tables**: Creada para la computación en la nube de microsoft.
     * **Berkley DB**: Utilizada por su facilidad para comunicarse con cualquier lenguaje. Es de codigo abierto que permite uso comercial.
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

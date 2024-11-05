@@ -40,3 +40,5 @@ proporcionar disponibilidad, accesibilidad y confianza 24 horas al días, 7 día
 * **Seguridad, redundancia y diversificación**: almacenaje exterior de datos, tomas de alimentación eléctrica totalmente independientes y servicios de telecomunicaciones con balanceo de carga, SAI, control de acceso físico, etc.
 
 * **Control ambiental/prevención de incendios**: el control del ambiente trata de la calidad del aire, temperatura, humedad, inundación, electricidad, control de fuego, etc.
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

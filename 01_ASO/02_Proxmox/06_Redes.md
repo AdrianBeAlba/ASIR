@@ -80,3 +80,6 @@ Vamos a poner un ejemplo de reglas (Maquina > Firewall >> ADD):
     * Enable: Marcado
     * Dest.port: 22
     * Protocolo: TCP
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
