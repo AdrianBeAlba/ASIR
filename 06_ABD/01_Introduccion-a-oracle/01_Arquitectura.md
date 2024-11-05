@@ -12,8 +12,8 @@ Usando SQLPLUS, los objetos de la bd que veremos son tablas, vistas y procedimie
 - Todos los objetos creados por un usuario forman un esquema.
 - El nombre del esquema es el del usuario.
 - Nombres de los objetos en el esquema:
-  _ Tenemos que referirnos a ellos por el nombre del usuario que los creo.
-  _ Ejemplo:
+  - Tenemos que referirnos a ellos por el nombre del usuario que los creo.
+  - Ejemplo:
   ~~~sql
   select columna from usuario.tabla;
   ~~~
@@ -164,7 +164,7 @@ CREATE PFILE='<pfile location>' FROM SPFILE = '<spfile location>';
   - Graban todas las modificaciones que sufre la base de datos
   - Funcionan circularmente y se sobrescriben, mínimo debe existir uno.
   - Se recomienda trabajar en varios discos y ficheros (Multiplexados)
-  - Son n grupos de n miembros a modo de espejo y en discos distintos.
+  - Son grupos de miembros a modo de espejo y en discos distintos.
   - Son de acceso secuencial, por lo que interesa ponerlos en dispositivos rápidos.
   - Se graban al hacer COMMIT o cuando se llena el buffer a un tercio
   - Encontramos información sobre ellos en V$LOGFILE y V$LOG.
@@ -447,7 +447,8 @@ ALTER SYSTEM FLUSH SHARED POOL;
 ***Nota: antes de a version 10 de Oracle Server el admin tenia que asignar la memoria manualmente, pero ahora es automatico***
 
 
-**Esquema grafico**
+**Esquema grafico**:
+
 ![03](IMG/03.png)
 
 ## Procesos de Oracle
@@ -455,6 +456,38 @@ ALTER SYSTEM FLUSH SHARED POOL;
 * Se crea cuando un usuario se conecta a la BD.
 * Atiende a peticiones lanzadas por el Usuario.
 
+### Procesos de Server:
+* Hay uno por cada sesion de trabajo.
+* Prestan funcionalidad a cada sesión para llevar a cabo funcionalidades del usuario.
+* Cuando el usuario realiza una consulta se crea un plan de ejecucion (Una tabla).
+* EL proceso cojera los blocks y los pondra en BUFFER.
+* El proceso tambien aplica los cambios.
+* El usuario hace uso de una porcion del PGA para ejecutar comandos y almacenar variables de usuario.
+Ejemplo de flujo:
+1. Usuario quiere modificar datos.
+2. Ejecuta plan de ejecucion solicitado y lo devolverá.
+3. Servidor aplica los cambios y los apunta en el Redo Log Buffer.
+
+### Procesos Background
+* Se ejecutan en segundo plano.
+* Suelen ser ejecuciones de tareas de coordinacion en el espacio de memoria.
+    * DBWR(Data Base Writer): 
+        * Estos procesos guardan cambios en datafiles. 
+        * Hacen uso de bloques modificados en memoria (Dirty blocks) para guardar dichas modificaciones.
+        * Se enumeran secuencialmente DBWR0, ...1, etc...
+    * LGWR(Log Writer): Actualiza los redo entries (entradas del log bufer con los redos) acia los Redo Log Files en el disco.
+    * Checkpoint (CHKPT): Proceso lanzado cada tres segundos. Sincroniza memoria y disco.
+        * Ordena a DBWR que envie dirty blocks al disco y que LGWR haga su trabajo.
+        * En los Redo Log Files se hace anotacion de que hizo el checkpoint en el Historico.
+        * Tambien anota en Control Files el momento, estado y nimero de cambios.
+        * No es lo mismo que un commit, este es una instruccion del redo log Buffer y sirve  para confirmar que la transaccion se guarde en Redo Log FIles.
+
+#### Otros procesos 
+* PMON: Limpia info que queda en el PGA al cerrase una sesion.
+* SMON: Limpia todo lo que no tiene sentido que exista, como info de un commit cuando se cierra mal una sesion.
+* MMAN: Se encarga de redistribuir espacio en memoria para optimizar los contenedores.
+
+![04](IMG/04.png)
 
 [⬅️ Volver al índice](./Index.md)
 [⬆️ Volver al README](/README.md)
