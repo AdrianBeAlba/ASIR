@@ -21,3 +21,5 @@ Modulos: fragmentos de codigo que dan utilidades
     * Crea un soft link de el documento de configuracion de la carpeta sites-available en sites-enabled
 *  a2dissite <sitio>: exactamenteo opuesto a lo anterior.
 * apache2ctl: 
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
