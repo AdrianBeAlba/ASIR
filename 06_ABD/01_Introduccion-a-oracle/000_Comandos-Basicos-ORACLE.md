@@ -159,7 +159,7 @@ DBA_USERS: Muestra los perfiles de los usuarios*/
 
 -------Roles--------
 --Para crear un rol: 
-CREATE ROLE nombre;
+CREATE ROLE nombre; --NO PUEDE COINCIDIR CON NOMBRE DE USUARIO
 --Para añadir privilegios: 
 GRANT priv [ON obj] TO nombrerol;
 --Para quitar privilegios: 
@@ -199,12 +199,13 @@ TABLESPACE nombre_ts;---Definimos tablespace donde se encontrara la tabla
 
 -- Creación de tablespace
 CREATE [TEMPORARY|UNDO] TABLESPACE nombrets
-[DATAFILE|TEMPFILE] ruta_absoluta_fichero [SIZE nº [K|M]][REUSE][AUTOEXTEND ON [MAXSIZE n M]]
+[DATAFILE|TEMPFILE] ruta_absoluta_fichero [SIZE nº [K|M]][REUSE][AUTOEXTEND ON [NEXT K N][MAXSIZE n M]]
 … (podemos añadir más ficheros separando con comas)...
 [LOGGING|NOLOGGING]
 [PERMANENT|TEMPORARY]
 [DEFAULT STORAGE
 (clausulas de almacenamiento)]
+[extent management local uniform size k M;] -- Para temporales
 [OFFLINE];
 
 --Ejemplo
@@ -229,6 +230,8 @@ DROP TABLESPACE nombrets [INCLUDING CONTENTS][AND DATAFILES];
 
 -- Consultar tablespaces.
 SELECT * FROM DBA_TABLESPACES;
+-- VER QUOTAS DE TABLESPACES
+SELECT USERNAME, TABLESPACE_NAME, MAX_BYTES FROM DBA_TS_QUOTAS WHERE USERNAME = '<USUARIO>';
 -- Consultar por usuario
 SELECT USERNAME, DEFAULT_TABLESPACE, temporary_tablespace FROM dba_users WHERE USERNAME = '<usuario>';
 ~~~
