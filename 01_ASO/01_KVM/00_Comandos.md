@@ -182,3 +182,6 @@ virsh pool-undefine
 | version            | Muestra la versión de `virsh`.                                                                  |
 | nodeinfo           | Entrega información acerca del hipervisor.                                                      |
 
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

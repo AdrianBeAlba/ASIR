@@ -72,3 +72,5 @@ vzctl set 101 --userpasswd root:secreto --onboot yes --save
 * --userpasswd root:secreto: Establece la contraseña para el usuario root como secreto.
 * --onboot yes: Configura el contenedor para que se inicie automáticamente al arrancar el sistema.
 * --save: Guarda esta configuración.
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

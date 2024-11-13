@@ -8,6 +8,7 @@
 - [05_Usuarios.md](05_Usuarios.md)
 - [06_Redes.md](06_Redes.md)
 - [IMG](./IMG/Index.md)
+- [SCRIPTS](./SCRIPTS/Index.md)
 
 - [⬅️ Volver al índice superior](../Index.md)
 - [⬆️ Volver al README](/README.md)

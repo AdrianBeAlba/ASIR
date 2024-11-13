@@ -91,3 +91,5 @@ nano mipool.xml
   </target>
 </pool>
 ~~~
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

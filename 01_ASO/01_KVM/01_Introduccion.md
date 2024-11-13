@@ -118,3 +118,5 @@ El proyecto KVM ofrece dispositivos paravirtualizados llamados virtIO, que mejor
     * KVM soporta VM de hasta 16 CPUs virtuales y 256 GB de RAM.
     * El rendimiento de aplicaciones como SGBD Oracle, SAP, LAMP, MS Exchange sobre KVM puede oscilar entre el 95 % y el 135 % comparado con su ejecución en servidores físicos.
     * Se han conseguido ratios de hasta 600 máquinas virtuales en un solo servidor físico.
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

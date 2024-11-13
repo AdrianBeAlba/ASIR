@@ -1,6 +1,13 @@
 # Índice de 01_KVM
 
-- [07_Discos-volumenes-colnaciones.md](07_Discos-volumenes-colnaciones.md)
+- [00_Comandos.md](00_Comandos.md)
+- [01_Introduccion.md](01_Introduccion.md)
+- [02_Instalacion.md](02_Instalacion.md)
+- [03_Redes.md](03_Redes.md)
+- [04_VM.md](04_VM.md)
+- [05_Almacenamiento.md](05_Almacenamiento.md)
+- [06_Discos-volumenes-colnaciones.md](06_Discos-volumenes-colnaciones.md)
+- [IMG](./IMG/Index.md)
 
 - [⬅️ Volver al índice superior](../Index.md)
 - [⬆️ Volver al README](/README.md)

@@ -90,3 +90,5 @@ virsh -c qemu:///system
 ## Te conecta a la terminal de virsh
 <comando>
 ~~~
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

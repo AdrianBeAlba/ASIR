@@ -318,3 +318,5 @@ sudo virsh net-info default
 # Estado de la red 'default' (y de todas las redes)
 sudo virsh net-list --all
 ~~~
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
