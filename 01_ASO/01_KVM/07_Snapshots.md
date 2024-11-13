@@ -51,3 +51,5 @@ virsh snapshot-delete <nombremaquina> <num-snap>
     2. Elimino snapshot.
 * HACER LOS CAMBIOS PERMANENTES
     * Boro snap
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
