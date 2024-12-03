@@ -14,3 +14,5 @@ tcpdump saca toda la info en tiempo real del estado de la red, esto es filtrable
 ### Instalacion Prometeus
 
 ## Grafana
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

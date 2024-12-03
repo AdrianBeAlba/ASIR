@@ -41,3 +41,5 @@ atop # Muestra procesos en una fecha
 * pkill `<nombre_proceso>`: mata todos los procesos con ese nombre
 
 ***Nota: ejecutar comando con '&' lo ejecuta en segundo plano;***
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

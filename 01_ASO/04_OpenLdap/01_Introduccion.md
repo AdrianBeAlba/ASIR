@@ -103,3 +103,6 @@ chown -R 2000:2000 /home/juan
 * dc=megainfo2xx
 * dc=com
 ![02](IMG/02.png)
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

@@ -85,3 +85,6 @@ Al seleccionar un disco de una maquina virtual podremos acceder a algunas opcion
 * Resize: aumenta el tamaño del disco.
 * Move disk: copia el contenido del disco a otra fuente de almacenamiento. Se puede indicar si se borra el dispositivo original os si no se usa.
 * 
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

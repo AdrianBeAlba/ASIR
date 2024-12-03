@@ -50,3 +50,5 @@ cd ## Si tiene directorio home todo va ien
 ![07](IMG/Instalacion_Cliente/07.png)
 
 ***Nota: el servidor debe de estar activo, especialmente en las comprobaciones finales.***
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

@@ -1,6 +1,6 @@
-# Índice de 02_Docker
+# Índice de 01
 
-- [EXER](./EXER/Index.md)
+- [templates](./templates/Index.md)
 
 - [⬅️ Volver al índice superior](../Index.md)
 - [⬆️ Volver al README](/README.md)

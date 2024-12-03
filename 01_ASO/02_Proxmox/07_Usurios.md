@@ -104,3 +104,6 @@ Queremos otorgar al *grupo1* el rol de *PVEAuditor* sobre  todas las VMs.
 3. Pulsamos Add y se asignara el permiso
 
 **Nota: No se pueden gestionar permisos relacionados con redes ni bridges**
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

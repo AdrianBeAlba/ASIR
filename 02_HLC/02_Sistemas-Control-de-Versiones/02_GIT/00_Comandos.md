@@ -45,3 +45,5 @@ git push <destino> <rama> # Envia los datos a <destino> en <rama>
 git fetch # Cumbrueba metadatos para ver si hay cambios en origen
 fit pull # Trae datos de origen
 ~~~
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

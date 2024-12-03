@@ -7,6 +7,8 @@
 - [04_Contenedores.md](04_Contenedores.md)
 - [05_Usuarios.md](05_Usuarios.md)
 - [06_Redes.md](06_Redes.md)
+- [07_Usurios.md](07_Usurios.md)
+- [08_Almacenamiento.md](08_Almacenamiento.md)
 - [IMG](./IMG/Index.md)
 
 - [⬅️ Volver al índice superior](../Index.md)
