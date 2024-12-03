@@ -2,12 +2,17 @@
 
 ## Pasos previos
 **1. Configuramos el nombre del host a clientex.dominio.com**
+
 ![02](IMG/Instalacion_Cliente/02.png)
+
 **2. Configuramos una ip estatica.**
+
 ![01](IMG/Instalacion_Cliente/01.png)
+
 **3. Revisamos los repositorios de debian para que contenga los necesarios.**
 
 **4. En hosts, resolvemos el nombre del servidor.**
+
 ![03](IMG/Instalacion_Cliente/03.png)
 
 ## Instalacion de paquetes
@@ -50,5 +55,6 @@ cd ## Si tiene directorio home todo va ien
 ![07](IMG/Instalacion_Cliente/07.png)
 
 ***Nota: el servidor debe de estar activo, especialmente en las comprobaciones finales.***
+
 [⬅️ Volver al índice](./Index.md)
 [⬆️ Volver al README](/README.md)
