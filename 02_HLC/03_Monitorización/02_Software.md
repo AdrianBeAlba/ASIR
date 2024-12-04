@@ -9,10 +9,9 @@ tcpdump saca toda la info en tiempo real del estado de la red, esto es filtrable
 * tcptrack -i nic: igual que tcpdump, pero mas claro.
 * iptraf: se instala con iptraf-ng, paquete muy intuitivo para revisar trafico en red, entre otras opciones.
 * bmon: paquete intuitivo para monitorizar trafico. 
-
-## Prometeus
-### Instalacion Prometeus
-
+* ss: ver puertos
+    - tnl: puertos escuchando
+    - tnp: puertos establecidos
 ## Grafana
 [⬅️ Volver al índice](./Index.md)
 [⬆️ Volver al README](/README.md)
