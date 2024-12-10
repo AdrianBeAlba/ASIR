@@ -21,7 +21,7 @@ Consiste en una erramienta grafica para ejecutar metasploit. Se puede instalar c
 ## Ejercicio 5.
 ## ¿Qué es Kali Linux? ¿Dónde puedes conseguirlo?
 Una distribucion de linux basada en debian, esta especializada en ciberseguridad, tienen pagina oficial donde descargar el ISO o OVAs para Virtual box y similares.
-## sEjercicio 6.
+## Ejercicio 6.
 ## ¿Encuentras en Kali Linux alguna de las herramientas que ya has visto en las tareas realizadas hasta ahora?¿Cuáles?
 Si, nmap por ejemplo
 
