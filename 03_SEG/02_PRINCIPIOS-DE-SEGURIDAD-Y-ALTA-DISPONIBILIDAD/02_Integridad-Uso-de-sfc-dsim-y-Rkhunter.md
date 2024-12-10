@@ -10,12 +10,21 @@
 
     Una de las más conocidas es Rootkit Hunter (rkhunter), que es un escáner open-source que busca rootkits, backdoors, y exploits locales en tu sistema. Escanea archivos en busca de modificaciones sospechosas y comprueba si hay permisos inusuales, ficheros ocultos, y configuraciones comprometidas. 
 
+    Malwarebytes Anti-Rootkit es una herramienta gratuita diseñada para detectar y eliminar rootkits. Es un software especializado que escanea el sistema en busca de rootkits ocultos en el kernel, el MBR o en particiones de disco. Además, ofrece reparación para componentes del sistema dañados tras la eliminación del rootkit. Puedes descargarlo desde Malwarebytes Anti-Rootkit​
+
+
 **3. Busca información e investiga sobre el comando SFC de Windows. Comenta qué significan sus siglas, qué hace el comando, su sintaxis y los parámetros más usuales, y en definitiva todo lo que consideres de interés sobre el mismo. Encuentra información oficial sobre su uso en Windows 11**
 
     El comando SFC (System File Checker) en Windows es una herramienta que permite verificar y reparar archivos del sistema operativo que estén corruptos o hayan sido modificados. SFC escanea todos los archivos protegidos de Windows y reemplaza los dañados o faltantes con copias correctas de los archivos almacenados en una carpeta protegida del sistema.
 
 ~~~PowerShell
-    sfc /scannow
+    sfc /scannow # Explora de inmediato todos los archivos el sistema protegidos
+    sfc /scanboot # Lo preparas para explorar al reiniciar el equipo
+    sfc /? # Ayuda
+    sfc /verifyonly # Solo verifica los archivos sin realizar reparaciones.
+    sfc /scanfile <ruta> # Escanea un archivo específico.
+    sfc /offbootdir  /offwindir # Permiten usar SFC en instalaciones de Windows que no estén activas (ideal para rescates desde entornos externos).
+
 ~~~
 
 
