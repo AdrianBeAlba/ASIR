@@ -68,4 +68,9 @@ Otros comandos de stress
 ~~~bash
 stress --cpu $(nproc --all) --vm 1 --vm-bytes 1G --vm-hang 1m
 
+yes > /dev/null & # & Lo pone en segundo plano
+
+ping -s 1472 clear
+apt update
+
 ~~~
