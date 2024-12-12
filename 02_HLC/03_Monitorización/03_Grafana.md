@@ -1,16 +1,20 @@
 # Grafana y Prometeo
 ## Instalacion
-# Install Prometheus and NodeExporter
+
+### Install Prometheus and NodeExporter
+~~~bash
 apt update && upgrade
 apt install prometheus
 systemctl daemon-reload
 systemctl status prometheus
 systemctl enable prometheus
 systemctl list-unit-files | grep prometheus
-# Install Grafana
-# Permite instalar desde https
+~~~
+### Install Grafana
+~~~bash
+#### Permite instalar desde https
 apt install -y apt-transport-https
-# Instalamos wget
+#### Instalamos wget
 apt install -y software-properties-common wget
 # Nos descargamos la key de grfana para poder descargar sus paquetes
 wget -q -O - https://packages.grafana.com/gpg.key |apt-key add -
@@ -35,6 +39,7 @@ systemctl status grafana-server
 #Por el navegador
 http://<ipmaquina>:3000
 ## Usuario: admin , Contraseña: admin
+~~~
 ## Linkeo
 1. Vamos a  la pagina principal de grafana > Data Sources.
 2. Seleccionamos Prometeus.
@@ -71,8 +76,6 @@ stress --cpu $(nproc --all) --vm 1 --vm-bytes 1G --vm-hang 1m
 yes > /dev/null & # & Lo pone en segundo plano
 
 ping -s 1472 clear
-apt update
-
 ~~~
 [⬅️ Volver al índice](./Index.md)
 [⬆️ Volver al README](/README.md)
