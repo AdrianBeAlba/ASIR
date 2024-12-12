@@ -74,3 +74,5 @@ ping -s 1472 clear
 apt update
 
 ~~~
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

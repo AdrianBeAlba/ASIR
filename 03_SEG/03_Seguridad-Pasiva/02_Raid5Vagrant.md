@@ -163,3 +163,5 @@ sudo xfs_growfs /mnt/raid5
 ---
 
 Ahora tienes un RAID 5 completamente funcional con volumen lógico, soportando fallos de disco y configurado para el crecimiento. Si necesitas documentar más detalles o personalizarlo, házmelo saber.
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
