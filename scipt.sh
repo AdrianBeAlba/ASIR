@@ -37,7 +37,9 @@ generate_index() {
 
     # Añade los enlaces de navegación al final del archivo índice
     echo "" >> "$index_file"
+    
     if [ "$parent_dir" != "." ]; then
+        echo "" >> "$index_file"
         echo "- [⬅️ Volver al índice superior](../Index.md)" >> "$index_file"
     fi
     echo "- [⬆️ Volver al README](/README.md)" >> "$index_file"

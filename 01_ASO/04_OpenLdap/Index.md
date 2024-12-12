@@ -6,5 +6,6 @@
 - [04_CarpetaCompartida.md](04_CarpetaCompartida.md)
 - [IMG](./IMG/Index.md)
 
+
 - [⬅️ Volver al índice superior](../Index.md)
 - [⬆️ Volver al README](/README.md)

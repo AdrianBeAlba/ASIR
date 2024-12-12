@@ -37,5 +37,6 @@ sudo ufw allow from [IP_de_los_equipos] to any port nfs
 2. Vamos al servidor y vemos si se ha creado el archivo
 
 ![alt text](IMG/Carpeta_Compartida/04.png)
+
 [⬅️ Volver al índice](./Index.md)
 [⬆️ Volver al README](/README.md)
