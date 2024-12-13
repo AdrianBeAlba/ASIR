@@ -1,45 +1,50 @@
 # Introducción a la Monitorización
 
-## Que se monitoriza
-* **Red**
-* **Procesos**
-* **Memoria**
-* **Disco**
+La monitorización garantiza el correcto funcionamiento y rendimiento de los sistemas, permitiendo detectar problemas antes de que afecten a usuarios o servicios. Los elementos clave incluyen redes, procesos, memoria y discos.
 
-## Monitorización de procesos
+## Qué se monitoriza
 
-### Comanddos
-~~~bash
-ps # Muestra procesos
-top # Vision en tiempo real
-htop # Version mas visual de top
-atop # Muestra procesos en una fecha
-~~~
-* **ps -au**:  Ver todos los procesos de manera detallada
-    * -a: todos los procesos de usuario
-    * u: informacion detallada 
-    * -C `<programa especifico>`: info de proceso especifico
-    * -x: info de los demonios
-    * -o `<cabeceras de procesos>`: permite alterar que columnas muestra
-    * -e: muestra todos los procesos
-    * --sort `[-/+<cabecera>]`: orden de salida
+* **Red**: Supervisa el tráfico, latencia y disponibilidad para mantener una comunicación estable.
 
-***Nota: añade  `| head -n <num>` para filtrar cuantos procesos aparecen;***
+* **Procesos**: Monitorea la ejecución de aplicaciones y servicios para garantizar un uso eficiente de recursos.
 
-![ps](IMG/01.png)
+* **Memoria**: Controla el uso de RAM y swap para evitar problemas de rendimiento.
 
-* **top**: se maneja en vivo pulsando botones.
-    * -b > `<>`:no interactivo, guarda en un fichero
-    * -n `numero`: itera `numero` veces
-    * -o `[-/+<cabecera>]`: ordena por cabecera.
+* **Disco**: Supervisa el espacio y la salud del almacenamiento para prevenir fallos.
 
-***Nota: top -b -n3 -o -%CPU | head -n 17. Filtra por uso de cpu*** 
-* **htop**: mucho mas grafico, se controla de manera interactiva.
-* **atop**:
-* jobs: muestra lo que esta en segundo plano.
-* kill -9  `<id_proceso>/%<idproceso>`: mata proceso, % mata los que se muestre en jobs.
-* pkill `<nombre_proceso>`: mata todos los procesos con ese nombre
+## Monitorización de Procesos
 
-***Nota: ejecutar comando con '&' lo ejecuta en segundo plano;***
+La monitorización de procesos analiza el comportamiento de aplicaciones y servicios. Incluye:
+- **Estado:** Verificar si los procesos están activos.
+- **Consumo de recursos:** Monitorear uso de CPU, memoria y disco por cada proceso.
+- **Duración:** Detectar procesos que exceden tiempos normales.
+- **Alertas:** Notificar fallos o uso excesivo de recursos.
+
+## Monitorización de Red
+
+Supervisa la infraestructura de red para garantizar conectividad y rendimiento óptimos. Incluye:
+- **Tráfico:** Análisis de volumen de datos transferidos.
+- **Latencia:** Medir tiempos de respuesta entre dispositivos.
+- **Disponibilidad:** Verificar accesibilidad de routers, switches y servidores.
+- **Alertas:** Detectar desconexiones o saturaciones de red.
+
+## Monitorización de Memoria
+
+Controla el uso de memoria para asegurar un rendimiento estable. Incluye:
+- **Uso de RAM:** Identificar aplicaciones con alto consumo de memoria.
+- **Swap:** Supervisar el uso de memoria virtual.
+- **Disponibilidad:** Prevenir la saturación de recursos.
+- **Alertas:** Detectar fugas de memoria o niveles críticos.
+
+## Monitorización de Disco
+
+Asegura la integridad y rendimiento del almacenamiento. Incluye:
+- **Espacio disponible:** Controlar uso de disco para evitar llenado.
+- **Velocidad:** Monitorear tiempos de lectura/escritura.
+- **Salud del disco:** Identificar fallos físicos o deterioro.
+- **Alertas:** Notificar baja disponibilidad de espacio o problemas de rendimiento.
+
+
+
 [⬅️ Volver al índice](./Index.md)
 [⬆️ Volver al README](/README.md)
