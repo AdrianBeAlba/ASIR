@@ -55,6 +55,34 @@ Vistas del diccionario de datos:
 DBA_PROFILES: Muestra los perfiles existentes con sus límites.
 DBA_USERS: Muestra los perfiles de los usuarios
 
+## Comandos Clusters
+~~~sql
+CREATE CLUSTER nombre_cluster (clave_columna TIPO_DATO)
+TABLESPACE nombre_tablespace
+SIZE tamaño_bytes;
+
+CREATE INDEX indice_cluster
+ON CLUSTER nombre_cluster;
+
+--Ejemplo de tablas
+CREATE TABLE empleado (
+    empleado_id NUMBER PRIMARY KEY,
+    nombre VARCHAR2(100),
+    departamento_id NUMBER
+) CLUSTER empleado_departamento_cluster (departamento_id);
+
+CREATE TABLE departamento (
+    departamento_id NUMBER PRIMARY KEY,
+    nombre_departamento VARCHAR2(100)
+) CLUSTER empleado_departamento_cluster (departamento_id);
+
+---Verificacion
+
+SELECT table_name, cluster_name
+FROM user_tables
+WHERE cluster_name IS NOT NULL;
+
+~~~
 
 [⬅️ Volver al índice](./Index.md)
 [⬆️ Volver al README](/README.md)
