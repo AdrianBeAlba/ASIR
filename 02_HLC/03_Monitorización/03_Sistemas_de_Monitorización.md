@@ -13,3 +13,6 @@ Existen varias aplicaciones que nos facilitan el seguimiento del funcionamiento 
 
 - **Grafana:**
   No es una herramienta de monitorización como tal, pero sirve para visualizar los datos de varias fuentes (Prometheus, Zabbix, InfluxDB, etc.). Permite crear dashboards personalizados para mostrar gráficas e indicadores clave de manera interactiva y en tiempo real.
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
