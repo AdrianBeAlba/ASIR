@@ -134,3 +134,6 @@ Aquí tienes un ejemplo de cómo podría ser un archivo de configuración para `
 *   **DNS:**  Para que el dominio `www.pagina1.org` apunte a tu servidor, debes configurar el DNS o el archivo `/etc/hosts` de tu máquina cliente.
 
 Este archivo de configuración te proporciona un punto de partida completo para tu sitio web. Recuerda que puedes personalizarlo y añadir más directivas según tus necesidades.
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

@@ -200,3 +200,6 @@ Indica la ruta de los archivos del sitio virtual.
 
 Los documentos cubren un amplio rango de configuraciones de Apache. Desde la configuración básica hasta la implementación de seguridad y funcionalidades avanzadas. Es importante seguir las buenas prácticas para asegurar un entorno de servidor web seguro y eficiente.
 
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
