@@ -2,7 +2,7 @@
 
 ## AUDIO
 
-(Audio.wav)[https://drive.google.com/file/d/1jszRJoxYWCUNf0iJ_wJtEuGMhc18PC7L/view?usp=drive_link]
+### [Audio](https://drive.google.com/file/d/1jszRJoxYWCUNf0iJ_wJtEuGMhc18PC7L/view?usp=drive_link)
 
 ## Introducción
 
