@@ -1,5 +1,9 @@
 # Documento de Briefing: Configuración y Funcionalidades del Servidor Apache
 
+## AUDIO
+
+(Audio.wav)[https://drive.google.com/file/d/1jszRJoxYWCUNf0iJ_wJtEuGMhc18PC7L/view?usp=drive_link]
+
 ## Introducción
 
 Este documento resume los conceptos clave y las prácticas relacionadas con la configuración y el uso del servidor web Apache, basado en los documentos proporcionados. Los temas cubren desde la gestión de directorios, redireccionamientos y páginas de error, hasta el control de acceso, la seguridad con SSL y la gestión de módulos.
