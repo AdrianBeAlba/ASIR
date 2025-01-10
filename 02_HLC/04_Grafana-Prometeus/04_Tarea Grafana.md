@@ -1,14 +1,14 @@
 # Practica alerta grafana
 
-1. Activar verificacion en 2 pasos de gmail.
-2. Crear contraseña de aplicacion.
-3. nano /etc/grafana/grafana.ini ctrl+w=smtp
+1. **Activar verificacion en 2 pasos de gmail.**
+2. **Crear contraseña de aplicacion.**
+3. **nano /etc/grafana/grafana.ini ctrl+w=smtp**
 
 ![alt text](image.png)
 
-4. systemctl restart grafana-server
+4. **systemctl restart grafana-server**
 
-5. Grqafana > aletrs > contact ponts
+5. **Grafana > alerts > contact points**
 
 ![alt text](image-1.png)
 
