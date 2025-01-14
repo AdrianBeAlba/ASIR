@@ -1,0 +1,16 @@
+uid: rcarmona
+uidNumber: 2006
+gidNumber: 2000
+homeDirectory: /home/rcarmona
+uid: alopez
+uidNumber: 2007
+gidNumber: 2000
+homeDirectory: /home/alopez
+uid: mdominguez
+uidNumber: 2008
+gidNumber: 2000
+homeDirectory: /home/mdominguez
+uid: lperez
+uidNumber: 2009
+gidNumber: 2000
+homeDirectory: /home/lperez

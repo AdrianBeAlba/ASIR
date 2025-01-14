@@ -48,7 +48,7 @@ OpenLDAP funciona sobre TC/IP lo que lo hace la alternativa mas deseable
 `slapcat`: devuelve toda la estructura actual
 `slappasswd`: generar contraseña encriptada
     `-s <contraseña>`: le especifica contraseña a encriptar
-    `-h <metodo>`: configura metodo de encriptado
+    `-h <metodo>`: configura método de encriptado
 
 ~~~bash
 # Ejemplos
