@@ -11,11 +11,12 @@ Cada vez que se cambien los módulos usados se ha de reiniciar apache, igual que
 
 `apache2ctl -M`: Muestra los módulos activos.
 
-`apache2ctl – l`: Módulos que se cargan con apache2ctl (núcleo de apache)
+`apache2ctl -l`: Módulos que se cargan con apache2ctl (núcleo de apache)
 
 ## Modulo userdir
 
 Userdir es un módulo de apache que hace posible que todos los usuarios con acceso a un servidor tengan una carpeta llamada public_html en la cual puedan alojar sus páginas y archivos.
 
 ## WebDav
-WebDAV (“Edición y versionado distribuidos sobre la web“) es un protocolo para hacer que la www sea un medio legible y editable. Este protocolo proporciona funcionalidades para crear, cambiar y mover documentos en un servidor remoto (típicamente un servidor web).
+WebDAV (“Edición y versionado distribuidos sobre la web“) es un protocolo para hacer que la www sea un medio legible y editable. 
+Este protocolo proporciona funcionalidades para crear, cambiar y mover documentos en un servidor remoto (típicamente un servidor web).
