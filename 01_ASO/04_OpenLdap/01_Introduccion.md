@@ -1,32 +1,33 @@
-# Instroducción
+# Introducción
 ## Antecedentes
 ### NIS
-Servia para la autenticacion centralizada de usuarios en una red local, desgraciadameente no usa TCP/IP por lo que no se cifra la informacion, ahora esta en desuso.
+Servia para la autenticación centralizada de usuarios en una red local, desgraciadamente no usa TCP/IP por lo que no se cifra la información, ahora esta en desuso.
 
 OpenLDAP funciona sobre TC/IP lo que lo hace la alternativa mas deseable
 
-## Definicion
-* LDAP es un protocolo de aplicacion y transmite protocolos por la capa de 
-* OpenLDAP cnsiste en la version libre de este protocolo. 
+## Definición
+
+* LDAP es un protocolo de aplicación y transmite protocolos por la capa de 
+* OpenLDAP consiste en la version libre de este protocolo. 
 * Se basa en el programa slapd (daemon).
 * Es un servicio permanente durante el inicio del sistema.
 * Clientes/Comandos: 
-    * ladpsearch: busqueda y cnsultas
+    * ladpsearch: búsqueda y consultas
     * ldapdd: inserciones
     * ldapdelete: borrados
-* Todas las tranbsaccionees se realizan por comandos, no hay ficheros de configuracion que se deban tocar.
+* Todas las transacciones se realizan por comandos, no hay ficheros de configuración que se deban tocar.
 
 ## Arquitectura
-* Dividida en dos modulos
+* Dividida en dos módulos
     * Back-end: 
-        * Gestion de almacenamiento
+        * Gestión de almacenamiento
         * Puede haber varios backend
     * Front-end
         * Conexiones
         * Procesado del protocolo
 
 * Orden de accion
-    1. Cieente hace peticion al front end
+    1. Cliente hace peticion al front end
     2. Se valida el mensaje y se enva al back-end
     3. Front end recibe respuesta y la envia al cliente
 
@@ -60,12 +61,14 @@ ldapsearch  -LL -x -b "dc=megainfo202,dc=com" "dn" # Busqueda de todo dentro de 
 ldapmodify -x -W -D cn=admin,dc=megainfo202,dc=com -f modificacion.ldif # Modificacion de perfil por fichero
 ~~~
 modificacion.ldif:
+
     ~~~nano
     dn: uid=juan,ou=people,dc=megainfo202,dc=com
     changetype: modify
     replace: mail
     mail: juand@.educaand.es
     ~~~
+
 Fuchero de usuario juan.ldif:
 ~~~nano
 dn: uid=juan,ou=people,dc=megainfo202,dc=com
