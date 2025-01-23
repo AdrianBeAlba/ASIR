@@ -58,3 +58,5 @@ Esto estresara a la cpu
 4. Pasado otros 10 segundos, como hemos configurado, veremos la notificación saltar en Discord.
 
 ![alt text](IMG/10.png)
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

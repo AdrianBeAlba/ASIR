@@ -115,3 +115,6 @@ El archivo LDIF generado puede ser usado para respaldos o migraciones.
 ---
 
 Con esta guía, deberías poder instalar y configurar Apache Directory Studio, crear y modificar entradas LDAP, y exportar datos de manera efectiva.
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

@@ -63,3 +63,6 @@ Este documento resume las novedades más relevantes de Windows Server 2019 y Win
 - **Datacenter** está diseñado para quienes necesitan gran capacidad de virtualización, almacenamiento hiperconvergente y servicios de alta disponibilidad a gran escala.
 
 ---
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

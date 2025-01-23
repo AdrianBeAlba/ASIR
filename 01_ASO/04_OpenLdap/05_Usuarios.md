@@ -64,3 +64,5 @@ done < "$INPUT_FILE" # Cierra el bucle y termina de leer el archivo de datos
 echo "Proceso completado. Verifique la carpeta $OUTPUT_DIR para los archivos generados."
 ldapadd -x -W -D cn=admin,dc=megainfo202,dc=com -f $LDIF_FILE
 ~~~
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
