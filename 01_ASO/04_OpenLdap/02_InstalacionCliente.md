@@ -11,7 +11,7 @@
 
 **3. Revisamos los repositorios de debian para que contenga los necesarios.**
 
-**4. En hosts, resolvemos el nombre del servidor.**
+**4. En hosts, resolvemos el nombre del servidor. Y en resolv.conf añadimos `search megainfo202.com`** 
 
 ![03](IMG/Instalacion_Cliente/03.png)
 

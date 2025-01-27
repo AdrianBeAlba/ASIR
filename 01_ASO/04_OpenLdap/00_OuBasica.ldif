@@ -1,0 +1,58 @@
+# Creación de la Unidad Organizativa para la oficina de informatica
+dn: ou=informatica,dc=example,dc=com
+objectClass: organizationalUnit
+ou: informatica
+
+# Creación del grupo "desarrolladores"
+dn: cn=desarrolladores,ou=informatica,dc=example,dc=com
+objectClass: posixGroup
+cn: desarrolladores
+gidNumber: 2001
+
+# Creación del grupo "soporte"
+dn: cn=soporte,ou=informatica,dc=example,dc=com
+objectClass: posixGroup
+cn: soporte
+gidNumber: 2002
+
+# Creación del usuario Juan Pérez (en el grupo "desarrolladores")
+dn: uid=jperez,ou=informatica,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Juan Pérez
+sn: Pérez
+uid: jperez
+userPassword: password123
+loginShell: /bin/bash
+uidNumber: 3001
+gidNumber: 2001
+homeDirectory: /home/jperez
+
+# Creación del usuario María López (en el grupo "desarrolladores")
+dn: uid=mlopez,ou=informatica,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: María López
+sn: López
+uid: mlopez
+userPassword: password123
+loginShell: /bin/bash
+uidNumber: 3002
+gidNumber: 2001
+homeDirectory: /home/mlopez
+
+# Creación del usuario Carlos Gómez (en el grupo "soporte")
+dn: uid=cgomez,ou=informatica,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Carlos Gómez
+sn: Gómez
+uid: cgomez
+userPassword: password123
+loginShell: /bin/bash
+uidNumber: 3003
+gidNumber: 2002
+homeDirectory: /home/cgomez
