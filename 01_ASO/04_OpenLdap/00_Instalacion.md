@@ -2,18 +2,24 @@
 
 Un servidor LDAP (Lightweight Directory Access Protocol) es útil para gestionar y centralizar datos de usuarios, autenticación y permisos en redes. A continuación, te muestro los pasos básicos para instalar y configurar un servidor LDAP en un sistema basado en Linux, como Ubuntu o CentOS.
 
-1. **Actualizar el sistema**
+1. **Preparar el sistema**
 
 Primero, asegúrate de que tu sistema esté actualizado:
 ~~~bash
 sudo apt update && sudo apt upgrade -y
+
+## Cambiar hostname
+sudo hostnamectl set-hostname <host>
+## Añadir a /etc/hosts
+127.0.1.1 <host>.<dominio> <host>
+
 ~~~
 
 **2. Instalar el servidor OpenLDAP y las herramientas necesarias**
 
 Ejecuta el siguiente comando para instalar el servidor LDAP y sus herramientas:
 ~~~bash
-apt install libnss-ldap libpam-ldap ldap-utils nscd -y
+apt install slapd ldap-utils  -y
 ~~~
 
 **3. Configurar slapd**
@@ -26,15 +32,14 @@ sudo dpkg-reconfigure slapd
 
 Durante la configuración:
 
-Nombre de dominio (DNS): Introduce el nombre de tu dominio. Por ejemplo, si tu dominio es example.com, el DN base será dc=example,dc=com.
-
-Contraseña del administrador (admin): Configura una contraseña para el usuario administrador (cn=admin).
-
-Estructura de base de datos: Selecciona la opción por defecto (MDB).
-
-Purgar la base de datos al eliminar slapd: Generalmente, selecciona "No".
-
-Habilitar compatibilidad con ldif: Selecciona "Sí".
+- Omitir configuración de la base de datos? → No
+- Nombre de dominio DNS: → barcelona.teckservice.com
+- Nombre de la organización: → TeckService
+- Contraseña de administrador: → (Introduce una contraseña segura y confírmala)
+- Base de datos backend: → MDB
+- Eliminar la base de datos al purgar OpenLDAP? → No
+- Mover la antigua base de datos? → Sí
+- Habilitar el protocolo LDAPv2? → No
 
 **4. Verificar la instalación**
 
