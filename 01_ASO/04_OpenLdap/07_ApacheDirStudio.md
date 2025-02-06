@@ -86,3 +86,6 @@ Si prefiere instalarlo en formato `.deb`, descárgelo desde la página oficial:
 Si la conexión es correcta, podrá ver y administrar las entradas de su servidor LDAP desde la interfaz de **Apache Directory Studio**.
 
 ---
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

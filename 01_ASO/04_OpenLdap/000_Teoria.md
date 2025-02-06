@@ -242,3 +242,5 @@ En ese directorio(/etc/ldap/slapd.d) se encuentra los distintos ficheros de conf
 * La clase posixAccount que nos permitirá añadir los campos homeDirectory, loginShell, etc. 
 * Todos los objectClass y atributos están definidos dentro de los esquemas.
 * Un atributo definido en un esquema por un objectClass puede ser definido en otro esquema.
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

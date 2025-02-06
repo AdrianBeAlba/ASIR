@@ -114,3 +114,5 @@ memberUid: zona-b
 ~~~
 
 Comando: `ldapmodify -x -D "cn=admin,dc=teckservice,dc=com" -W -f modify_add_group.ldif`
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

@@ -16,3 +16,5 @@ sudo apt install software-properties-common
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible
 ~~~
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

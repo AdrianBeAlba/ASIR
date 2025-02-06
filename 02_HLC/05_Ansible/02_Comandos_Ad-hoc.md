@@ -24,3 +24,5 @@ ansible -i maquinas all -m [command|shell] -a "<comando>"
 ansible -i maquinas 172.26.7.2 -m setup # Devuelve información sobre la maquina en formato .json
 ansible -i maquinas 172.26.7.2 -m setup -a filter=ansible_distribution # Filtros según el campo que queremos referenciar.
 ~~~
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

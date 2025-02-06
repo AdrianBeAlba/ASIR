@@ -17,3 +17,6 @@ nano +329 /etc/phpldapadmin/config.php
 
 
 
+
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

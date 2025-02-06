@@ -60,3 +60,5 @@ ldapsearch -x -LLL -H ldap:/// -b dc=example,dc=com
 ~~~
 
 Sustituye dc=example,dc=com por tu dominio base configurado.
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)
