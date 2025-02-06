@@ -22,3 +22,5 @@ nano +356 /etc/phpldapadmin/config.php ## igual
 ~~~
 
 Ahora puedes entrar desde el navegador con la ip
+[⬅️ Volver al índice](./Index.md)
+[⬆️ Volver al README](/README.md)

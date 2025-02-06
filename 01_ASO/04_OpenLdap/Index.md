@@ -10,7 +10,7 @@
 - [05_Usuarios.md](05_Usuarios.md)
 - [06_Script-perfiles-moviles.md](06_Script-perfiles-moviles.md)
 - [07_ApacheDirStudio.md](07_ApacheDirStudio.md)
-- [08_MyLdapadmin.md](08_MyLdapadmin.md)
+- [08_PhpLdapadmin.md](08_PhpLdapadmin.md)
 - [IMG](./IMG/Index.md)
 
 
