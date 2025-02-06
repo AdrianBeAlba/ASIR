@@ -1,120 +1,88 @@
-# Instalación y Configuración de Apache Directory Studio
+# Instalación de Apache Directory Studio en una Máquina con Interfaz Gráfica
 
-Apache Directory Studio es una herramienta gráfica para administrar servidores LDAP. A continuación, se describen los pasos para instalarlo, configurarlo, realizar pruebas, crear usuarios y grupos, modificar atributos y exportar datos.
+## 1. Introducción
+Apache Directory Studio es una herramienta de administración de directorios LDAP basada en Eclipse. Se puede utilizar para gestionar servidores OpenLDAP de manera visual y sencilla. Esta guía explica cómo instalar Apache Directory Studio en un sistema operativo con interfaz gráfica.
 
----
+## 2. Requisitos Previos
+- Un sistema operativo con entorno gráfico.
+- Conexión a internet.
+- Java instalado en el sistema.
 
-## 1. Instalación de Apache Directory Studio
+## 3. Instalación en Linux (Ubuntu/Debian con GUI)
 
-### **Requisitos previos**
-- **Java Runtime Environment (JRE)** instalado (Java 8 o superior).
-- Conexión a Internet para descargar el instalador.
+### 3.1. Instalar Java
+Apache Directory Studio requiere Java para ejecutarse. Para instalar Java, ejecute los siguientes comandos:
 
-### **Instalación en Windows**
-1. Descarga el instalador desde la página oficial:
-   - [Apache Directory Studio](https://directory.apache.org/studio/)
-2. Ejecuta el archivo descargado y sigue las instrucciones del asistente.
-3. Abre Apache Directory Studio desde el menú de inicio.
+```bash
+sudo apt update
+sudo apt install openjdk-17-jdk -y
+```
 
-### **Instalación en Linux**
-1. Descarga el archivo `.tar.gz` desde la página oficial.
-2. Extrae el contenido:
-   ```bash
-   tar -xvzf ApacheDirectoryStudio-*.tar.gz
-   ```
-3. Navega al directorio extraído:
-   ```bash
-   cd ApacheDirectoryStudio
-   ```
-4. Ejecuta el archivo binario:
-   ```bash
-   ./ApacheDirectoryStudio
-   ```
+Verifique que Java esté instalado correctamente:
 
-### **Instalación en macOS**
-1. Descarga el archivo `.dmg` desde la página oficial.
-2. Abre el archivo `.dmg` y arrastra Apache Directory Studio a la carpeta de aplicaciones.
-3. Ejecuta la aplicación desde el Launchpad.
+```bash
+java -version
+```
 
----
+Debe mostrar una salida similar a:
 
-## 2. Configuración de la Conexión LDAP
+```
+openjdk version "17.0.x"
+```
 
-1. Abre Apache Directory Studio.
-2. Crea una nueva conexión LDAP:
-   - Haz clic derecho en el panel de conexiones y selecciona **New Connection**.
-3. Configura los detalles de la conexión:
-   - **Host**: IP o nombre de dominio del servidor LDAP.
-   - **Port**: 389 (LDAP) o 636 (LDAPS para conexión segura).
-4. Configura la autenticación:
-   - **Bind DN o User**: Por ejemplo, `cn=admin,dc=example,dc=com`.
-   - **Password**: La contraseña del usuario administrador.
-5. Haz clic en **Check Network Parameter** para verificar la conexión.
-6. Guarda la conexión y conéctate.
+### 3.2. Descargar Apache Directory Studio
+Descargue la última versión del software desde la página oficial de Apache:
 
----
+```bash
+wget https://dlcdn.apache.org/directory/studio/2.0.0.v20210717-M17/ApacheDirectoryStudio-2.0.0.v20210717-M17-linux.gtk.x86_64.tar.gz
+```
 
-## 3. Creación de Usuarios y Grupos
+### 3.3. Extraer e Instalar
+Extraiga el archivo descargado:
 
-### **Crear un Grupo**
-1. En el árbol de directorios, navega al contenedor donde deseas crear el grupo (por ejemplo, `ou=groups,dc=example,dc=com`).
-2. Haz clic derecho y selecciona **New Entry**.
-3. Selecciona **Create entry from scratch**.
-4. Agrega los siguientes atributos:
-   - **objectClass**: `top`, `groupOfUniqueNames`.
-   - **cn**: Nombre del grupo.
-5. Finaliza y guarda el grupo.
+```bash
+tar -xvzf ApacheDirectoryStudio-2.0.0.v20210717-M17-linux.gtk.x86_64.tar.gz
+```
 
-### **Crear un Usuario**
-1. Navega al contenedor donde deseas crear el usuario (por ejemplo, `ou=users,dc=example,dc=com`).
-2. Haz clic derecho y selecciona **New Entry**.
-3. Selecciona **Create entry from scratch**.
-4. Agrega los siguientes atributos:
-   - **objectClass**: `top`, `person`, `inetOrgPerson`.
-   - **cn**: Nombre común del usuario.
-   - **sn**: Apellido del usuario.
-   - **uid**: Identificador único del usuario.
-   - **userPassword**: Contraseña del usuario.
-5. Finaliza y guarda el usuario.
+Mueva la carpeta extraída a `/opt/`:
 
----
+```bash
+sudo mv ApacheDirectoryStudio /opt/apache-directory-studio
+```
 
-## 4. Modificación y Agregación de Atributos
+### 3.4. Crear un Acceso Directo
+Para facilitar la ejecución del programa, cree un enlace simbólico:
 
-1. Selecciona la entrada que deseas modificar en el árbol de directorios.
-2. Haz clic derecho y selecciona **Open Entry**.
-3. En la pestaña **Attributes**, realiza las modificaciones necesarias:
-   - Para agregar un atributo, haz clic en **Add Attribute**.
-   - Para modificar un atributo existente, selecciona el valor y edítalo.
-4. Guarda los cambios.
+```bash
+sudo ln -s /opt/apache-directory-studio/ApacheDirectoryStudio /usr/local/bin/apache-directory-studio
+```
+
+Ahora puede ejecutar Apache Directory Studio con el siguiente comando:
+
+```bash
+apache-directory-studio
+```
+
+Si prefiere instalarlo en formato `.deb`, descárgelo desde la página oficial:
+[Apache Directory Studio - Descargas](https://directory.apache.org/studio/downloads.html)
+
+## 4. Instalación en Windows
+1. Descargue Apache Directory Studio desde:
+   [Apache Directory Studio - Descargas](https://directory.apache.org/studio/downloads.html)
+2. Ejecute el instalador y siga las instrucciones.
+3. Abra el programa y conéctese a su servidor LDAP.
+
+## 5. Conectar Apache Directory Studio a un Servidor LDAP
+1. **Abrir Apache Directory Studio**.
+2. **Crear una nueva conexión LDAP** (`New LDAP Connection`).
+3. Introducir los siguientes datos:
+   - **Host:** `192.168.1.55` (o la IP de su servidor LDAP)
+   - **Puerto:** `389`
+   - **Encryption:** `No encryption` (o `SSL/TLS` si configuró LDAPS en el servidor)
+   - **Bind DN or user:** `cn=admin,dc=barcelona,dc=techservices,dc=com`
+   - **Password:** `(su contraseña de administrador de LDAP)`
+4. **Guardar y conectar**.
+
+Si la conexión es correcta, podrá ver y administrar las entradas de su servidor LDAP desde la interfaz de **Apache Directory Studio**.
 
 ---
-
-## 5. Exportación de Datos
-
-1. Haz clic derecho en la entrada o contenedor que deseas exportar.
-2. Selecciona **Export > LDIF File**.
-3. Configura las opciones de exportación:
-   - Selecciona si deseas incluir subárboles.
-   - Define el archivo de salida.
-4. Haz clic en **Finish**.
-
-El archivo LDIF generado puede ser usado para respaldos o migraciones.
-
----
-
-## 6. Realizar Pruebas
-
-1. **Verificar Conexión**:
-   - Navega por el árbol de directorios para confirmar que puedes visualizar las entradas.
-2. **Autenticación**:
-   - Usa un cliente LDAP para probar el inicio de sesión con los usuarios creados.
-3. **Integración con Aplicaciones**:
-   - Configura una aplicación (como Nextcloud o Grafana) para usar LDAP y verifica que los usuarios puedan autenticarse.
-
----
-
-Con esta guía, deberías poder instalar y configurar Apache Directory Studio, crear y modificar entradas LDAP, y exportar datos de manera efectiva.
-
-[⬅️ Volver al índice](./Index.md)
-[⬆️ Volver al README](/README.md)
