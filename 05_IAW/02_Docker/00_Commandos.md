@@ -86,6 +86,19 @@ docker inspect ubuntu:20.04
 # Eliminar imagen (requiere de eliminar contenedores que la usen)
 docker rmi ubuntu:20.04
 
+# Crear una imagen basada en un contenedor
+docker commit a61 TuNombreUsuarioDockerHub/a61
+
+# Inicio de sesion en docker hub (necesario para el push)
+docker login
+
+# Enviar la imagen a tu docker hub (pull funciona igual)
+docker push TuNombreUsuarioDockerHub/a61
+
+# Crea imagen a partir de Dockerfile que se encuentre en el directorio . (Dockerfile se tiene que llamar asi)
+docker build -t <nombreimagen> .
+
+
 ~~~
 
 [⬅️ Volver al índice](./Index.md)
