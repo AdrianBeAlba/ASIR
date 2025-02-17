@@ -1,0 +1,21 @@
+- name: Crear un usuarios
+  hosts:  all
+  become: true
+  vars_files:
+    - variables.yaml
+
+  tasks:
+    - name: Crea group
+      ansible.builtin.group:
+        name: "{{ grupo }}"
+        state: present
+
+    - name: Crea usuario, añade al group
+      ansible.builtin.user:
+        name: "{{ usuario }}"
+        comment: "{{ comentario }}"
+        group: "{{ grupo }}"
+        home: "{{ home_dir }}"
+        create_home: true
+        password: "{{ password }}"
+        state: present

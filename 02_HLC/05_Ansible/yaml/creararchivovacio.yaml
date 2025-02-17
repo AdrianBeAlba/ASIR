@@ -1,0 +1,8 @@
+- name: Crear un archivo vacio en /tmp/goku.txt
+  hosts:  all
+  gather_facts: no
+  tasks:
+    - name: Crear archivo
+      ansible.builtin.file:
+        path: /tmp/goku.txt
+        state:  touch

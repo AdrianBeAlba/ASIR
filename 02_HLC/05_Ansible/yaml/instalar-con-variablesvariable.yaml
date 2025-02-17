@@ -1,0 +1,15 @@
+- name: Instala paquete
+  hosts: all
+  become: true
+  vars:
+    nombre: "Manolo"
+    paquete: "vim"
+  tasks:
+    - name: Saludar
+      debug:
+        msg:  "Hola, {{ nombre }}"
+    
+    - name: Instalar pkg
+      apt:
+        name: "{{ paquete }}"
+        state: present

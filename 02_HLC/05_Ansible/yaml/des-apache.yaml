@@ -1,0 +1,12 @@
+---
+-  name: Desiinstalar apache
+   hosts: all
+
+   tasks:
+   -  name: Des Apacche
+      ansible.builtin.apt
+      name: apache2
+      state: absent
+      purge: yes
+      auoremove: yes
+---

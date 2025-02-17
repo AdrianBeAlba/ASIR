@@ -1,0 +1,11 @@
+---
+-  name: Primer play de servicios
+   hosts: all
+
+   tasks:
+   -  name: STOPAPACHE
+      ansible.builtin.systemd:
+        name: apache2
+        state: stopped
+        enabled: no
+---

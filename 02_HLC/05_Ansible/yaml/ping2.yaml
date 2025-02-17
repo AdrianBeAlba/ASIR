@@ -1,0 +1,11 @@
+---
+- name: Primer play
+  hosts: all
+
+  tasks:
+  - name: Hacer Ping
+    ansible.builtin.ping:
+  - name: Crear archivo
+    ansible.builting.shell:
+      touch /tmp/goku.txt
+---

@@ -1,0 +1,18 @@
+- name: Crear un archivo con variable
+  hosts:  all
+  become: true
+  vars_files:
+    - variables.yaml
+
+  tasks:
+    - name: Crear dir
+      ansible.builtin.file:
+        path: "{{ diretorio }}"
+        state:  directory
+        mode: '0755'
+
+    - name: Crear archivo
+      ansible.builtin.copy:
+        path: "{{ diretorio }}/{{archivo}}"
+        content:  "{{ contenido }}"
+        mode: '0644'
