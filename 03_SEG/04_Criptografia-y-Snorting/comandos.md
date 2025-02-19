@@ -40,8 +40,8 @@ gpg -d -o archivo.txt archivo.txt.gpg ## Desencripta y guarda de vuelta a archiv
 gpg -d -a archivo.txt archivo.txt.asc ## Desencripta y guarda de vuelta a archivo txt
 
 gpg --gen-key # Genera par de claves
-gpg --export -a "<nombreclave>"
-gpg --import "<nombreclave>"
+gpg --export -a "<nombreclave>" > archivokey.pub
+gpg --import archivokey.pub
 
 gpg -a --encrypt -r "<nombeclave>" archivo.txt ## Encripta bajo clave generada
 gpg -a -decrypt archivo_encriptado.txt
