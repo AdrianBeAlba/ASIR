@@ -1,0 +1,31 @@
+- name: Practivr con lineinfile
+  hosts: all
+  become: true
+  vars_files: 
+    - configuracion.yaml
+
+  tasks:
+    - name: Crear el archivo
+      ansible.builtin.file:
+        path: "{{ archivo }}"
+        state: touch
+        mode: '0644'
+    
+    - name: Añadir linea en el archivo
+      ansible.builtin.lineinfile:
+        path: "{{ archivo }}"
+        line: "{{ agg_linea }}"
+        state: present
+
+    - name: Modificar linea en el archivo
+      ansible.builtin.lineinfile:
+        path: "{{ archivo }}"
+        regexp: "^Opcion activada:.*"
+        line: "{{ mod_linea }}"
+        state: present
+
+    - name: Elimina linea en el archivo
+      ansible.builtin.lineinfile:
+        path: "{{ archivo }}"
+        line: "{{ del_linea }}"
+        state: absent

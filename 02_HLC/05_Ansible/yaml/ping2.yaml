@@ -1,4 +1,3 @@
----
 - name: Primer play
   hosts: all
 
@@ -8,4 +7,4 @@
   - name: Crear archivo
     ansible.builting.shell:
       touch /tmp/goku.txt
----
+

@@ -1,0 +1,23 @@
+- name: Borrar un usuarios
+  hosts:  all
+  become: true
+  vars_files:
+    - variables.yaml
+
+  tasks:
+    - name: Sacar usergroup
+      ansible.builtin.user:
+        name: "{{ usuario }}"
+        groups: ""
+        append: false
+
+    - name: Borrar user y su home
+      ansible.builtin.user:
+        name: "{{ usuario }}"
+        state: absent
+        remove: true
+
+    - name: Borrar grupo
+      ansible.builtin.group:
+        name: "{{ grupo }}"
+        state: absent
