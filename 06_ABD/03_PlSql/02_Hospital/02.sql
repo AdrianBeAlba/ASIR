@@ -20,9 +20,9 @@ OPEN c_empdep;
         FETCH c_empdep INTO v_numdep, v_depname;
         EXIT WHEN c_empdep%NOTFOUND;
         CASE 
-            WHEN v_numdep < 10 THEN dbms_output.put_line('DATOS DE OCUPACIÓN DEL DEPARTAMENTO :'|| v_depname ||', Nivel de Ocupacion: Baja');
-            WHEN v_numdep between 10 and 19 THEN dbms_output.put_line('DATOS DE OCUPACIÓN DEL DEPARTAMENTO :'|| v_depname ||', Nivel de Ocupacion: Medio');
-            ELSE dbms_output.put_line('DATOS DE OCUPACIÓN DEL DEPARTAMENTO :'|| v_depname ||', Nivel de Ocupacion: Alta');
+            WHEN v_numdep < 10 THEN dbms_output.put_line('DATOS DE OCUPACIÓN DEL DEPARTAMENTO :'|| v_depname ||', Nivel de Ocupacion: Baja, empleados: '||v_numdep);
+            WHEN v_numdep between 10 and 19 THEN dbms_output.put_line('DATOS DE OCUPACIÓN DEL DEPARTAMENTO :'|| v_depname ||', Nivel de Ocupacion: Medio, empleados: '||v_numdep);
+            ELSE dbms_output.put_line('DATOS DE OCUPACIÓN DEL DEPARTAMENTO :'|| v_depname ||', Nivel de Ocupacion: Alta, empleados: '||v_numdep);
         END CASE;
         DBMS_OUTPUT.PUT_LINE('---------------------------');
     END LOOP;
@@ -30,5 +30,5 @@ OPEN c_empdep;
 
 end;
 /
-select count(e.emp_nif) as total_emp, d.nombre from departamento_empleado e join departamento d on e.dept_codigo=d.codigo group by e.dept_codigo, d.nombre;
+--select count(e.emp_nif) as total_emp, d.nombre from departamento_empleado e join departamento d on e.dept_codigo=d.codigo group by e.dept_codigo, d.nombre;
 exec hospital02;
