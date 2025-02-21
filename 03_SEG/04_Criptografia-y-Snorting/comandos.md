@@ -22,7 +22,8 @@ sudo nft add rule inet filter input tcp dport 80 drop
 sudo nft list ruleset # Comprobar que existe la regla
 
 # Despues de comprobar visualmente que la pagina esta caida lo miramos en los logs de suricata, si no aparece mas de http o "timeouts" es que funciona
-sudo tail -f /var/log/suricata/eve.json | jq .
+sudo suricata -c /etc/suricata/suricata.yaml -i enX0 -k none -l . 'port 80'
+sudo tail -f eve.json | jq .
 ~~~
 ## Criptografia
 
