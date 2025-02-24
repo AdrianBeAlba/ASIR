@@ -1,0 +1,6 @@
+---
+- name: Configurar servidor web con Apache
+  hosts: all
+  become: yes
+  roles:
+    - apache

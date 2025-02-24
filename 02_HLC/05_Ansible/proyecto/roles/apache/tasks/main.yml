@@ -1,0 +1,26 @@
+---
+# tasks file for roles/apache
+- name: Instalar Apache
+  apt:
+    name: "{{ apache_package }}"
+    state: present
+  become: yes
+
+- name: Asegurar que Apache esté activo y habilitado
+  service:
+    name: "{{ apache_service }}"
+    state: started
+    enabled: yes
+  become: yes
+
+- name: Copiar página de inicio estática
+  copy:
+    src: index.html
+    dest: "{{ index_file }}"
+  notify: Reiniciar Apache
+
+- name: Generar página de inicio desde plantilla
+  template:
+    src: index.html.j2
+    dest: "{{ index_file }}"
+  notify: Reiniciar Apache

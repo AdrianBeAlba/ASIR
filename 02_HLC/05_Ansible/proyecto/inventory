@@ -1,0 +1,7 @@
+[hanoi]
+debian1
+#172.26.7.2 ansible_user=usuario
+
+[santorini]
+debian2
+#172.26.8.2 ansible_user=usuario

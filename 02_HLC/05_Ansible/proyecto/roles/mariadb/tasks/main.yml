@@ -1,0 +1,14 @@
+---
+# tasks file for roles/mariadb
+- name: Instalar MariaDB
+  ansible.builtin.apt:
+    name: mariadb-server
+    state: present
+  become: yes
+
+- name: Habilitar y arrancar MariaDB
+  ansible.builtin.service:
+    name: mariadb
+    state: started
+    enabled: yes
+  become: yes
